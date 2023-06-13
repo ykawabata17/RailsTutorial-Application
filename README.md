@@ -42,3 +42,29 @@ $ rails server
 
 詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 を参考にしてください。
+
+
+# 以下，学んだことを書いていく
+## コントローラーの作成，削除
+```
+コントローラーを作成
+$ rails g controller Sample
+コントローラーの作成を取り消し
+$ rails destroy controller sample
+```
+
+## モデルの作成，削除
+```
+モデルの作成
+$ rails g model Sample
+モデルの作成を取り消し
+$ rails destroy model Sample
+```
+
+## データベースのマイグレーション
+```
+マイグレーション
+$ rails db:migrate
+マイグレーションの取り消し
+$ rails db:rollback
+```
