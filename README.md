@@ -44,8 +44,8 @@ $ rails server
 を参考にしてください。
 
 
-# 以下，学んだことを書いていく
-## コントローラーの作成，削除
+## 以下，学んだことを書いていく
+### コントローラーの作成，削除
 ```
 コントローラーを作成
 $ rails g controller Sample
@@ -53,7 +53,7 @@ $ rails g controller Sample
 $ rails destroy controller sample
 ```
 
-## モデルの作成，削除
+### モデルの作成，削除
 ```
 モデルの作成
 $ rails g model Sample
@@ -61,10 +61,21 @@ $ rails g model Sample
 $ rails destroy model Sample
 ```
 
-## データベースのマイグレーション
+### データベースのマイグレーション
 ```
 マイグレーション
 $ rails db:migrate
 マイグレーションの取り消し
 $ rails db:rollback
 ```
+
+### HTTPメソッドについて
+HTTPには4つの基本的な操作がある．
+- GET:
+  - Web上のデータを読み取るとき
+- POST:
+  - ページ上のフォームに入力した値をブラウザから送信するとき
+- PATCH:
+  - サーバー上の何かを更新するとき
+- DELETE:
+  - サーバー上の何かを削除するとき
