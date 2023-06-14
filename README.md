@@ -98,7 +98,9 @@ Railsでは，以下のような名前付きルーティングを使用するの
 
 <%= link_to "About", about_path %>
 ```
-上のコードは意味的には同じであるが，Railsでは下のコードを用いる．
+上のコードは意味的には同じであるが，Railsでは下のコードを用いる．  
+これを用いることで，`about_path`や`about_url`といった名前付きルーティングを使えるようになる．  
+
 
 ### Asset Pipeline
 詳細については[Railsガイド](https://railsguides.jp/asset_pipeline.html)を参照．  
