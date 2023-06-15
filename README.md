@@ -192,3 +192,5 @@ footer {
   color: $light-gray;
 }
 ```
+
+**統合テスト(Integration Test)**
