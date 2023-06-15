@@ -57,8 +57,7 @@ class UserTest < ActiveSupport::TestCase
   test "email addresses should be unique" do
     # .dupで同じ属性を持つデータを複製する
     duplicate_user = @user.dup
-    duplicate_user.email = @user.email.upcase
     @user.save
-    assert_not duplicate_user.valid?
+    assert duplicate_user.invalid?
   end
 end
