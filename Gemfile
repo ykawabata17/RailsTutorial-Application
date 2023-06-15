@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # 下のRubyの正確なバージョン番号を指定する行を削除しておく
 # ruby "3.2.2"
 gem "rails", "~> 7.0.5"
+gem "bcrypt", "3.1.18"
 gem "bootstrap-sass", "3.4.1"
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"

@@ -3,7 +3,8 @@ require "test_helper"
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    @user = User.new(name: "Example User", email: "user@example.com")
+    @user = User.new(name: "Example User", email: "user@example.com",
+                    password: "foobar", password_confirmation: "foobar")
   end
 
   # 有効性の検証
@@ -59,5 +60,16 @@ class UserTest < ActiveSupport::TestCase
     duplicate_user = @user.dup
     @user.save
     assert duplicate_user.invalid?
+  end
+
+  # パスワードの最小文字数
+  test "password should be present (nonblank)" do
+    @user.password = @user.password_confirmation = " " * 6
+    assert @user.invalid?
+  end
+
+  test "password should have a minimum length" do
+    @user.password = @user.password_confirmation = "a" * 5
+    assert @user.invalid?
   end
 end
