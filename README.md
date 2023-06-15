@@ -205,3 +205,14 @@ footer {
 - データの定義をRubyで記述することができる
 - SQLのDDL(Data Definition Language)が必要ない
   - DDL: データ定義言語と呼ばれ，SQLの命令(CREATE, DROP, ALTER...)などのこと
+
+> モデルのレコードを.destroyしても削除されたオブジェクトはメモリ上にまだ残っている
+
+### 検証(Validation)と有効性(Validity)
+モデルのバリデーション機能はテスト駆動開発(TDD)の方が相性が良い
+検証のよく使われるケースを以下に示す
+- 存在性(presence)
+- 長さ(length)
+- フォーマット(format)
+- 一意性(uniqueness)
+- 確認(confirmation)
