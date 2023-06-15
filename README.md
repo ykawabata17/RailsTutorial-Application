@@ -194,3 +194,14 @@ footer {
 ```
 
 **統合テスト(Integration Test)**
+
+
+### Active Record
+- データベースとやりとりをするデフォルトのRailsライブラリ
+- データオブジェクトの作成/保存/検索のためのメソッドを持つ
+- SQLを意識する必要がない
+
+### マイグレーション
+- データの定義をRubyで記述することができる
+- SQLのDDL(Data Definition Language)が必要ない
+  - DDL: データ定義言語と呼ばれ，SQLの命令(CREATE, DROP, ALTER...)などのこと
