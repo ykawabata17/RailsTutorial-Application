@@ -247,3 +247,9 @@ RailsのWebサイトでは，トラフィックが多い時に一意性の検証
 
 **ただし，`has_secure_password`を使えるようにするには，モデル内に`password_digest`という属性が含まれていなければならない**  
 **また，最先端のハッシュ関数である`bcrypt`ライブラリが必要**  
+
+
+### RESTfulなアクション
+routesファイルに`resources :users`を追加するだけで，RESTfulなリソースにするために必要なアクションが作成できる．  
+
+### Strong Parameters
