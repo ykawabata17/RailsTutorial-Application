@@ -361,3 +361,6 @@ Rubyの極めて強力な機能．
 
 ## Turbo
 Turbo Streamsと呼ばれる部分を介して動作する
+
+## N+1クエリ問題
+- eager loadingで解決する
