@@ -353,3 +353,5 @@ Rubyの極めて強力な機能．
 ## 能動的関係(Active Relationship)と受動的関係(Passive Relationship)
 
 ## 外部キーについて
+
+## hidden_field_tagについて
