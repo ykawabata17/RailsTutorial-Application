@@ -338,6 +338,7 @@ Rubyの極めて強力な機能．
 
 ## リファラー(referrer)
 
+
 ## Active Strage
 - アプリケーションのデータベース
 - 以下の3つのテーブルを使う
@@ -352,7 +353,9 @@ Rubyの極めて強力な機能．
 
 ## 能動的関係(Active Relationship)と受動的関係(Passive Relationship)
 
-## 外部キーについて
+## 外部キー(foreign_key)について
+- referencesとは，カラムに保存できる型の一つで，外部キー(foreign_key)を作成する際に使用する  
+- 簡単に言うと，外部キーとは，主キーを参照するためのカラムのこと
 
 ## hidden_field_tagについて
 
