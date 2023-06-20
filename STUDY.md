@@ -349,3 +349,7 @@ Rubyの極めて強力な機能．
   - `has_one_attached`メソッド
     - 指定のモデルとアップロードされたファイルを関連づけるのに使う
     - `has_many_attached`メソッドもある
+
+## 能動的関係(Active Relationship)と受動的関係(Passive Relationship)
+
+## 外部キーについて
