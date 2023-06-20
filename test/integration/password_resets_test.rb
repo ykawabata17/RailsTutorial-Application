@@ -63,6 +63,8 @@ class PasswordFormTest < PasswordResetForm
   test "reset with right email and right token" do
     get edit_password_reset_path(@reset_user.reset_token,
                                  email: @reset_user.email)
+    puts @reset_user.reset_token
+    puts @reset_user.email
     assert_template 'password_resets/edit'
     assert_select "input[name=email][type=hidden][value=?]", @reset_user.email
   end
