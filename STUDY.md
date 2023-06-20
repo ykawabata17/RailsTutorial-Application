@@ -355,3 +355,6 @@ Rubyの極めて強力な機能．
 ## 外部キーについて
 
 ## hidden_field_tagについて
+
+## Turbo
+Turbo Streamsと呼ばれる部分を介して動作する
